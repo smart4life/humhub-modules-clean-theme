@@ -1,3 +1,46 @@
 #topbar > .container > .nav > li > a[data-menu-id=spaces] {
   display: none;
 }
+
+.account-layout-container,
+.profile-layout-container,
+.space-layout-container {
+  .layout-nav-container {
+    padding: 0 15px;
+    width: 100%;
+
+    > .left-navigation > .panel-heading {
+      display: none;
+    }
+
+    .list-group {
+      margin-left: 4px;
+
+      .list-group-item {
+        display: inline-block;
+        border-radius: 3px;
+        margin: 4px 0;
+        margin-bottom: 4px;
+        text-align: center;
+        height: 70px;
+        // max-width: 120px;
+        vertical-align: top;
+        padding: 10px;
+
+        > .fa {
+          display: block;
+          width: 100%;
+          text-align: center;
+          margin-top: 3px;
+          height: 20px;
+
+          &::before {
+              font-size: 20px;
+              height: 20px;
+              width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
